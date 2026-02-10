@@ -1,8 +1,8 @@
 struct ListNode* addTwoNumbers(struct ListNode* l1, struct ListNode* l2) {
     struct ListNode *head = NULL, *tail = NULL;
     int carry = 0;
-
-   
+ while (l1 != NULL || l2 != NULL || carry) {
+        int sum = carry;
 
         if (l1 != NULL) {
             sum += l1->val;
