@@ -10,4 +10,13 @@ int lengthOfLongestSubstring(char* s) {
             freq[s[left]]--;
             left++;
         }
+        int currentLen = right - left + 1;
+        if (currentLen > maxLen)
+            maxLen = currentLen;
+
+        right++;
+    }
+
+    return maxLen;
+}
 
