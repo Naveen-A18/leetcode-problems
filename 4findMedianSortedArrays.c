@@ -32,3 +32,5 @@ double findMedianSortedArrays(int* nums1, int m, int* nums2, int n)
         else
             low = partition1 + 1;
     }
+ return 0.0; // should never reach here
+}
