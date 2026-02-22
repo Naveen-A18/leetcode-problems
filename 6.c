@@ -28,4 +28,6 @@ char* convert(char* s, int numRows) {
         }
     }
 
-    
+    result[index] = '\0';
+    return result;
+}
